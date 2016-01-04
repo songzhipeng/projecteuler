@@ -1,121 +1,51 @@
-#coding:utf-8
+# coding: utf-8
 
-#59
-
-key = [103, 111, 100]
-string = '''(The Gospel of John, chapter 1) 1 In the beginning the Word already existed. He was with God, and he was God. 2 He was in the beginning with God. 3 He created everything there is. Nothing exists that he didn't make. 4 Life itself was in him, and this life gives light to everyone. 5 The light shines through the darkness, and the darkness can never extinguish it. 6 God sent John the Baptist 7 to tell everyone about the light so that everyone might believe because of his testimony. 8 John himself was not the light; he was only a witness to the light. 9 The one who is the true light, who gives light to everyone, was going to come into the world. 10 But although the world was made through him, the world didn't recognize him when he came. 11 Even in his own land and among his own people, he was not accepted. 12 But to all who believed him and accepted him, he gave the right to become children of God. 13 They are reborn! This is not a physical birth resulting from human passion or plan, this rebirth comes from God.14 So the Word became human and lived here on earth among us. He was full of unfailing love and faithfulness. And we have seen his glory, the glory of the only Son of the Father.'''
-print sum(map(ord, list(string)))
-
-
-# import string
-
-# en = [79,59,12,2,79,35,8,28,20,2,3,68,8,9,68,45,0,12,9,67,68,4,7,5,23,27,1,21,79,85,78,79,85,71,38,10,71,27,12,2,79,6,2,8,13,9,1,13,9,8,68,19,7,1,71,56,11,21,11,68,6,3,22,2,14,0,30,79,1,31,6,23,19,10,0,73,79,44,2,79,19,6,28,68,16,6,16,15,79,35,8,11,72,71,14,10,3,79,12,2,79,19,6,28,68,32,0,0,73,79,86,71,39,1,71,24,5,20,79,13,9,79,16,15,10,68,5,10,3,14,1,10,14,1,3,71,24,13,19,7,68,32,0,0,73,79,87,71,39,1,71,12,22,2,14,16,2,11,68,2,25,1,21,22,16,15,6,10,0,79,16,15,10,22,2,79,13,20,65,68,41,0,16,15,6,10,0,79,1,31,6,23,19,28,68,19,7,5,19,79,12,2,79,0,14,11,10,64,27,68,10,14,15,2,65,68,83,79,40,14,9,1,71,6,16,20,10,8,1,79,19,6,28,68,14,1,68,15,6,9,75,79,5,9,11,68,19,7,13,20,79,8,14,9,1,71,8,13,17,10,23,71,3,13,0,7,16,71,27,11,71,10,18,2,29,29,8,1,1,73,79,81,71,59,12,2,79,8,14,8,12,19,79,23,15,6,10,2,28,68,19,7,22,8,26,3,15,79,16,15,10,68,3,14,22,12,1,1,20,28,72,71,14,10,3,79,16,15,10,68,3,14,22,12,1,1,20,28,68,4,14,10,71,1,1,17,10,22,71,10,28,19,6,10,0,26,13,20,7,68,14,27,74,71,89,68,32,0,0,71,28,1,9,27,68,45,0,12,9,79,16,15,10,68,37,14,20,19,6,23,19,79,83,71,27,11,71,27,1,11,3,68,2,25,1,21,22,11,9,10,68,6,13,11,18,27,68,19,7,1,71,3,13,0,7,16,71,28,11,71,27,12,6,27,68,2,25,1,21,22,11,9,10,68,10,6,3,15,27,68,5,10,8,14,10,18,2,79,6,2,12,5,18,28,1,71,0,2,71,7,13,20,79,16,2,28,16,14,2,11,9,22,74,71,87,68,45,0,12,9,79,12,14,2,23,2,3,2,71,24,5,20,79,10,8,27,68,19,7,1,71,3,13,0,7,16,92,79,12,2,79,19,6,28,68,8,1,8,30,79,5,71,24,13,19,1,1,20,28,68,19,0,68,19,7,1,71,3,13,0,7,16,73,79,93,71,59,12,2,79,11,9,10,68,16,7,11,71,6,23,71,27,12,2,79,16,21,26,1,71,3,13,0,7,16,75,79,19,15,0,68,0,6,18,2,28,68,11,6,3,15,27,68,19,0,68,2,25,1,21,22,11,9,10,72,71,24,5,20,79,3,8,6,10,0,79,16,8,79,7,8,2,1,71,6,10,19,0,68,19,7,1,71,24,11,21,3,0,73,79,85,87,79,38,18,27,68,6,3,16,15,0,17,0,7,68,19,7,1,71,24,11,21,3,0,71,24,5,20,79,9,6,11,1,71,27,12,21,0,17,0,7,68,15,6,9,75,79,16,15,10,68,16,0,22,11,11,68,3,6,0,9,72,16,71,29,1,4,0,3,9,6,30,2,79,12,14,2,68,16,7,1,9,79,12,2,79,7,6,2,1,73,79,85,86,79,33,17,10,10,71,6,10,71,7,13,20,79,11,16,1,68,11,14,10,3,79,5,9,11,68,6,2,11,9,8,68,15,6,23,71,0,19,9,79,20,2,0,20,11,10,72,71,7,1,71,24,5,20,79,10,8,27,68,6,12,7,2,31,16,2,11,74,71,94,86,71,45,17,19,79,16,8,79,5,11,3,68,16,7,11,71,13,1,11,6,1,17,10,0,71,7,13,10,79,5,9,11,68,6,12,7,2,31,16,2,11,68,15,6,9,75,79,12,2,79,3,6,25,1,71,27,12,2,79,22,14,8,12,19,79,16,8,79,6,2,12,11,10,10,68,4,7,13,11,11,22,2,1,68,8,9,68,32,0,0,73,79,85,84,79,48,15,10,29,71,14,22,2,79,22,2,13,11,21,1,69,71,59,12,14,28,68,14,28,68,9,0,16,71,14,68,23,7,29,20,6,7,6,3,68,5,6,22,19,7,68,21,10,23,18,3,16,14,1,3,71,9,22,8,2,68,15,26,9,6,1,68,23,14,23,20,6,11,9,79,11,21,79,20,11,14,10,75,79,16,15,6,23,71,29,1,5,6,22,19,7,68,4,0,9,2,28,68,1,29,11,10,79,35,8,11,74,86,91,68,52,0,68,19,7,1,71,56,11,21,11,68,5,10,7,6,2,1,71,7,17,10,14,10,71,14,10,3,79,8,14,25,1,3,79,12,2,29,1,71,0,10,71,10,5,21,27,12,71,14,9,8,1,3,71,26,23,73,79,44,2,79,19,6,28,68,1,26,8,11,79,11,1,79,17,9,9,5,14,3,13,9,8,68,11,0,18,2,79,5,9,11,68,1,14,13,19,7,2,18,3,10,2,28,23,73,79,37,9,11,68,16,10,68,15,14,18,2,79,23,2,10,10,71,7,13,20,79,3,11,0,22,30,67,68,19,7,1,71,8,8,8,29,29,71,0,2,71,27,12,2,79,11,9,3,29,71,60,11,9,79,11,1,79,16,15,10,68,33,14,16,15,10,22,73]
-# de = [0]*len(en)
-
-# key = [0,0,0]
-
-# res = 0
-
-# ran = range(65,90+1)+range(97,122+1)
-# ran2 = range(97,122+1)
-# ran3 = range(32,127)
+R = dict()
+def f(n):
+	if n%2 == 0:
+		return n/2
+	else:
+		return n*3+1
 
 
-# sets = [0] * 3
-# for i in xrange(0,3):
-# 	sets[i] = set(range(0,256))
-# 	for x in xrange(i,len(en),3):
-# 		sets[i] &= set([en[x]^y for y in ran3])
+def g(n,x):
+	# print 'g(',n,',',x,')'
+	if n == 1:
+		return x
+	# elif R.has_key(n):
+	# 	print '> R['+str(n)+']=',R[n]
+	# 	return x+R[n]
+	else:
+		return g(f(n),x+1)
 
 
+def h(n):
+	return g(n, 1)
 
-# for key[0] in sets[0]:
-# 	for key[1] in sets[1]:
-# 		for key[2] in sets[2]:
-# 			for x in xrange(0,len(en)):
-# 				de[x] = en[x] ^ key[x%3]
-# 			print key
-# 			print string.join(map(chr,de),'')
+for x in xrange(1,1000001):
+	if x % 10000 == 0:
+		print x / 10000,'%'
+	R[x] = h(x)
+
+# for x in xrange(1,14):
+	# print '>>',x
+	# R[x] = h(x)
+	# print '>>',x,R[x]
+	# print '>>>',R
 
 
 
-# # s1 = set([79^x for x in ran3])
-# # s2 = set([2^x for x in ran3])
-# # print s1 & s2
-# # s2 = set()
-# # for x in ran:
-# # 	print 79^x,'\t',
-# # print
-# # for x in ran:
-# # 	print 2^x,'\t',
-# # print
+maxValue = max(R.values())
+for k in R:
+	v = R[k]
+	if v == maxValue:
+		print k
+# print k, R[k]
 
 
 
 
-# # print range(0,len(en),3)
-
-# # keys = []
-
-# # for key[0] in xrange(0,256):
-# # 	for key[1] in xrange(0,256):
-# # 		for key[2] in xrange(0,256):
-# # 			flag = True
-# # 			for x in xrange(len(en)):
-# # 				de[x] = en[x] ^ key[x%3]
-# # 				if de[x] not in ran3:
-# # 					flag = False
-# # 					break
-# # 			if flag:
-# # 				keys.append(key)
-# # 				# print '>',key
-# # 				# print str(map(chr,de[:9]))
-# # print keys
-# 	# flag = True
-# 	# for x in range(0,len(en),3):
-# 	# 	if en[x]^key[0] not in ran:
-# 	# 		flag = False
-# 	# 		break
-# 	# if flag:
-# 	# 	print key[0]
+# print h(13)
+# print R[13]
 
 
-# # for key[0] in xrange(0,255):
-# # 	flag = True
-# # 	for x in range(0,len(en),3):
-# # 		print x,
-# # 		if en[x]^key[0] not in ran:
-# # 			# print '>',en[x]
-# # 			flag = False
-# # 			break
-# # 	# if flag:
-# # 	# 	print key[0]
-# # print 'end'
-
-
-# # for key[0] in ran2:
-# # 	x = en[0]^key[0]
-# # 	print en[0], key[0], x
-# 	# if x in ran:
-# 	# 	print key[0], x
-# 	# for key[1] in ran:
-# 	# 	for key[2] in ran:
-# 	# 		res = 0
-# 	# 		flag = True
-# 	# 		# if en[0]^key[0] in ran:
-# 	# 		# 	if en[1]^key[1] in ran:
-# 	# 		# 		if en[2]^key[2] in ran:
-# 	# 		# 			print key
-# 	# 		for i in xrange(0,len(en)):
-# 	# 			de[i] = en[i]^key[i%3]
-# 	# 			# if de[i] not in ran:
-# 	# 			# 	flag = False
-# 	# 			# 	break
-# 	# 			# else:
-# 	# 			# 	res += de[i]
-# 	# 		# if flag:
-# 	# 		# 	print '>',key
-# 	# 		# 	print de
-# 	# 		# print map(chr,de)[:3]
-# # print '>>'
-# # print res
